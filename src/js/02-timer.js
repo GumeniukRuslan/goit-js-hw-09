@@ -24,7 +24,8 @@ const options = {
       if (!startBtn.getAttribute('disabled')) {
         startBtn.setAttribute('disabled', '');
       }
-      alert('Please choose a date in the future');
+      Notiflix.Notify.failure('Please choose a date in the future.',
+        { timeout: 4000, cssAnimationStyle: 'zoom' });
       return;
     };
     chosedDataInMs = selectedDates[0].getTime();
@@ -54,8 +55,10 @@ function setTimer() {
  
   timerId = setInterval(() => {
     if (timerInMs < 1000) {
-    clearInterval(timerId);
-    alert('Congratulations!')
+      clearInterval(timerId);
+      Notiflix.Report.success('Congratulations!', '', 'Thanks!', { buttonFontSize: '17px' });
+      startBtn.removeAttribute('disabled', '');
+      dataPicker.removeAttribute('disabled', '');
     return;
     };
     timerInMs = timerInMs - 1000;
