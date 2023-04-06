@@ -76,6 +76,7 @@ img {
 }
 .datetime-picker:disabled{
   opacity: 0.5;
+  cursor: not-allowed;
 }
 .start-button {
   padding: 10px 20px;
@@ -92,6 +93,7 @@ img {
 .start-button:disabled {
   opacity: 0.5;
   cursor: default;
+  cursor: not-allowed;
 }
 
 .start-button:hover {
