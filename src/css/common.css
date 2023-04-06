@@ -16,3 +16,116 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* task 1 */
+.colorCngBtn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.colorCngBtn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.startColorChng {
+  background-color: #4CAF50;
+  color: white;
+  background-image: linear-gradient(to bottom right, #4CAF50, #126615);
+  border: 2px solid;
+  border-image: linear-gradient(to bottom right, #4CAF50, #126615) 1;
+}
+
+.stopColorChng {
+  background-color: #f44336;
+  color: white;
+  background-image: linear-gradient(to bottom right, #f44336, #7d160e);
+  border: 2px solid;
+  border-image: linear-gradient(to bottom right, #f44336, #7d160e) 1;
+}
+/* task 2 */
+
+.task2 {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.datetime-picker {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin-bottom: 10px;
+  width: 250px;
+}
+.datetime-picker:disabled{
+  opacity: 0.5;
+}
+.start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.start-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.start-button:hover {
+  background-color: #2980b9;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.label {
+  font-size: 16px;
+  color: #999;
+  margin-top: 5px;
+}
