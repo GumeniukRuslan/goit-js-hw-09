@@ -131,3 +131,45 @@ img {
   color: #999;
   margin-top: 5px;
 }
+
+/* task 3 */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form label input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form button[type="submit"] {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #55c57a;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form button[type="submit"]:hover {
+  background-color: #28b485;
+}
